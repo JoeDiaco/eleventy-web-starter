@@ -1,6 +1,7 @@
 const filters = require('./utils/filters.js')
 const transforms = require('./utils/transforms.js')
 const collections = require('./utils/collections.js')
+const plugins = require('./utils/plugins.js')
 
 module.exports = function (eleventyConfig) {
 	// Folders to copy to build dir (See. 1.1)
@@ -9,17 +10,22 @@ module.exports = function (eleventyConfig) {
 	// Filters 
 	Object.keys(filters).forEach((filterName) => {
 		eleventyConfig.addFilter(filterName, filters[filterName])
-	})
+	});
 
 	// Transforms
 	Object.keys(transforms).forEach((transformName) => {
 		eleventyConfig.addTransform(transformName, transforms[transformName])
-	})
+	});
 
 	// Collections
 	Object.keys(collections).forEach((collectionName) => {
 		eleventyConfig.addCollection(collectionName, collections[collectionName])
-	})
+	});
+
+	// Plugins
+	Object.keys(plugins).forEach((pluginName) => {
+		eleventyConfig.addPlugin(plugins[pluginName])
+	});
 
 	// This allows Eleventy to watch for file changes during local development.
 	eleventyConfig.setUseGitIgnore(false);
