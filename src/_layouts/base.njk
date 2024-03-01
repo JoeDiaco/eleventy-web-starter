@@ -20,7 +20,10 @@
         </noscript>
     </head>
     <body>
+        <div class="flex flex-col justify-between">
         {{ content | safe }}
+        {% include "footer.njk" %}
+        </div>
     </body>
     <script src="/static/app.min.js" defer></script>
 </html>

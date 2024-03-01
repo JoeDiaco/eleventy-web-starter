@@ -8,5 +8,10 @@ module.exports = {
 		return DateTime.fromJSDate(dateObj, {
 			zone: 'utc'
 		}).toFormat('yyyy-LL-dd');
+	},
+	htmlYearString: (dateObj) => {
+		return DateTime.fromJSDate(dateObj, {
+			zone: 'utc'
+		}).toFormat('yyyy');
 	}
 }
