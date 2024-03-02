@@ -20,7 +20,8 @@
         </noscript>
     </head>
     <body>
-        <div class="flex flex-col justify-between">
+        <div class="flex flex-col justify-between bg-white dark:bg-gray-900">
+        {% include "navbar.njk" %}
         {{ content | safe }}
         {% include "footer.njk" %}
         </div>
