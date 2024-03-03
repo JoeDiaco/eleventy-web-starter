@@ -2,50 +2,36 @@
 layout: base.njk
 ---
 
-<div class="flex-grow">
+<!-- Jumbotron -->
+<div
+  class="relative overflow-hidden bg-cover bg-no-repeat h-screen"
+  style="
+    background-position: 50%;
+    background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/146.webp');
+    height: 500px;
+  "
+>
   <div
-    class="container flex flex-col px-6 py-10 mx-auto space-y-6 lg:h-[32rem] lg:py-16 lg:flex-row lg:items-center"
+    class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsla(0,0%,0%,0.75)] bg-fixed"
   >
-    <div class="w-full lg:w-1/2">
-      <div class="lg:max-w-lg">
+    <div class="flex h-full items-center justify-center">
+      <div class="px-6 text-center text-white md:px-12">
         <h1
-          class="text-3xl font-semibold tracking-wide text-gray-800 dark:text-white lg:text-4xl"
+          class="mt-2 mb-16 text-5xl font-bold tracking-tight md:text-6xl xl:text-7xl"
         >
           {{site.slogan}}
         </h1>
-
-        <div class="mt-8 space-y-5">
-          <p class="flex items-center -mx-2 text-gray-700 dark:text-gray-200">
-            <span class="mx-2">{{site.description}}</span>
-          </p>
-        </div>
+        <p class="mb-16">{{site.description}}</p>
+        <button
+          type="button"
+          class="rounded border-2 border-neutral-50 px-[46px] pt-[14px] pb-[12px] text-sm font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-neutral-100 hover:bg-opacity-10 hover:text-neutral-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200"
+          data-te-ripple-init
+          data-te-ripple-color="light"
+        >
+          Get started
+        </button>
       </div>
-      <div
-        class="w-full mt-8 bg-transparent border rounded-md lg:max-w-sm dark:border-gray-700 focus-within:border-blue-400 focus-within:ring focus-within:ring-blue-300 dark:focus-within:border-blue-400 focus-within:ring-opacity-40"
-      >
-        <form class="flex flex-col lg:flex-row">
-          <input
-            type="email"
-            placeholder="Email"
-            class="flex-1 h-10 px-4 py-2 m-1 text-gray-700 placeholder-gray-400 bg-transparent border-none appearance-none dark:text-gray-200 focus:outline-none focus:placeholder-transparent focus:ring-0"
-          />
-
-          <button
-            type="button"
-            class="h-10 px-4 py-2 m-1 text-white transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-400 focus:outline-none focus:bg-blue-400"
-          >
-            Sign Up
-          </button>
-        </form>
-      </div>
-    </div>
-
-    <div class="flex items-center justify-center w-full h-96 lg:w-1/2">
-      <img
-        class="object-cover w-full h-full mx-auto rounded-md lg:max-w-2xl"
-        src="https://images.unsplash.com/photo-1543269664-7eef42226a21?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
-        alt="glasses photo"
-      />
     </div>
   </div>
 </div>
+<!-- Jumbotron -->
