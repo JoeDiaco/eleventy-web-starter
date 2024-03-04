@@ -1,0 +1,16 @@
+---
+layout: base.njk
+pagination:
+  data: podcasts
+  size: 1
+  alias: podcast
+  addAllPagesToCollections: true
+permalink: "podcasts/{{ podcast.slug }}/"
+eleventyComputed:
+  title: "{{ podcast.title }}"
+  seoDescription: "{{ podcast.description}}"
+  eleventyNavigation:
+    parent: PodcastPages
+    key: "{{ podcast.title }}"
+    title: "{{ podcast.title }}"
+---
