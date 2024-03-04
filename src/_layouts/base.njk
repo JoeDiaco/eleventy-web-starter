@@ -22,7 +22,9 @@
     <body>
         <div class="flex flex-col justify-between bg-white dark:bg-gray-900 h-auto">
         {% include "navbar.njk" %}
+        <main>
         {{ content | safe }}
+        </main>
         {% include "newsletter.njk" %}
         {% include "footer.njk" %}
         </div>
