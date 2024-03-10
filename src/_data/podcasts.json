@@ -2,7 +2,7 @@
     {
         "id": "whsfm",
         "title": "WHSFM",
-        "titlefull": "The 'What the Hey' Show for Millennials",
+        "fulltitle": "The 'What the Hey' Show for Millennials",
         "slogan": "The internet's premier sketch comedy audio drama.",
         "genre": "Nightmare Comedy",
         "description": "Scripted, surreal, often intertwined sketches about the mundane horror of everyday life.",
@@ -14,7 +14,7 @@
     {
         "id": "quarterrest",
         "title": "Quarter Rest",
-        "titlefull": "Quarter Rest with Joe Diaco",
+        "fulltitle": "Quarter Rest with Joe Diaco",
         "slogan": "Send your ears on vacation.",
         "genre":"Musicalicious",
         "description": "A music podcast hosted by tastemaker Joe Diaco [RIP].",
