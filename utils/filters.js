@@ -13,5 +13,5 @@ module.exports = {
 		return DateTime.fromJSDate(dateObj, {
 			zone: 'utc'
 		}).toFormat('yyyy');
-	}
+	},
 }

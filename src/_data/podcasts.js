@@ -16,7 +16,7 @@
         "title": "Quarter Rest",
         "fulltitle": "Quarter Rest with Joe Diaco",
         "slogan": "Send your ears on vacation.",
-        "genre":"Musicalicious",
+        "genre": "Musicalicious",
         "description": "A music podcast hosted by tastemaker Joe Diaco [RIP].",
         "slug": "quarter-rest-with-joe-diaco",
         "featured": true,
