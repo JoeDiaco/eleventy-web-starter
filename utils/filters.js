@@ -2,7 +2,11 @@ const {
 	DateTime
 } = require('luxon')
 
-module.exports = {
+const {
+	querier
+} = require('./querier');
+
+let exp = {
 	// https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
 	htmlDateString: (dateObj) => {
 		return DateTime.fromJSDate(dateObj, {
@@ -15,3 +19,5 @@ module.exports = {
 		}).toFormat('yyyy');
 	},
 }
+
+module.exports = exp;
