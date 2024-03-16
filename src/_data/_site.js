@@ -11,7 +11,7 @@ module.exports = {
 		},
 		"instagram": {
 			"handle": "@totalpillowchad",
-			"url": "https://twitter.com/totalpillowchad",
+			"url": "https://www.instagram.com/totalpillowchad/",
 		},
 		"facebook": {
 			"url": "https://www.facebook.com/profile.php?id=61557333870494"
@@ -20,6 +20,7 @@ module.exports = {
 	"logo": {
 		"main": {
 			"blue": "/static/tpc_logo.png",
+			"white": "/static/tpc_logo_white.png",
 			"alt": "Total Pillow Chad Productions logo"
 		},
 		"opengraph_default": "/static/opengraph-default.jpg",
