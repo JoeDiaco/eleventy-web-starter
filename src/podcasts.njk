@@ -62,7 +62,7 @@ eleventyNavigation:
       Here are my podcasts. They are cool.
     </p>
     <div class="mt-16 grid grid-cols-2 col-span-2 gap-4 lg:grid-cols-3">
-      {% for podcast in podcasts %}
+      {% for podcast in podcasts.data %}
       <a href="/podcasts/{{podcast.slug}}">
         <div
           class="overflow-hidden bg-cover rounded-lg cursor-pointer h-dvh w-auto group aspect-square"

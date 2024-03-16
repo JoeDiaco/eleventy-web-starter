@@ -1,7 +1,8 @@
 module.exports = {
 	theme: {
 		fontFamily: {
-			'sans': ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+			'header': ['Montserrat', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+			'sans' : ['Roboto', 'ui-sans-serif', 'system-ui', 'sans-serif']
 		},
 		extend: {
 			colors: {

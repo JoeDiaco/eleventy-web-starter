@@ -1,6 +1,15 @@
-@import 'utils/_tailwind.css';
-@import 'utils/_accessibility.css';
+@import "utils/_tailwind.css";
+@import "utils/_accessibility.css";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto&display=swap");
 
 /* a {
 	@apply text-ws-blue-500 underline;
 } */
+
+@layer base {
+	h1, h2, h3, h4, h5, h6 {
+		font-family: "Montserrat", sans-serif;
+  		font-optical-sizing: auto;
+  		font-style: normal;
+	}
+}
