@@ -12,9 +12,9 @@ module.exports = {
         listElement: "ul",            // Change the top level tag
         listItemElement: "li",        // Change the item tag
 
-        listClass: "flex flex-wrap justify-center mt-6 -mx-4",
-        anchorClass: "mx-4 text-sm text-gray-600 transition-colors duration-300 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400",              // Add a class to the anchor
-        activeAnchorClass: "",        // Add a class to the current page’s anchor
+        listClass: "flex flex-wrap justify-center -mx-5 -my-2",
+        anchorClass: "px-5 py-2 text-sm text-gray-500 hover:text-blue-600",              // Add a class to the anchor
+        activeAnchorClass: "text-gray-600",        // Add a class to the current page’s anchor
         showExcerpt: false
     }
 }
