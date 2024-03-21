@@ -21,6 +21,7 @@ module.exports = {
 		"main": {
 			"blue": "/static/tpc_logo.png",
 			"white": "/static/tpc_logo_white.png",
+			"flat": "/static/tpc_logo_flat.svg",
 			"alt": "Total Pillow Chad Productions logo"
 		},
 		"opengraph_default": "/static/opengraph-default.jpg",
