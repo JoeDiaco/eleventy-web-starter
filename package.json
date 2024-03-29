@@ -31,6 +31,7 @@
 	},
 	"dependencies": {
 		"@netlify/functions": "^2.6.0",
-		"alpinejs": "^3.13.5"
+		"alpinejs": "^3.13.5",
+		"eleventy-plugin-automatic-noopener": "^2.0.2"
 	}
 }
