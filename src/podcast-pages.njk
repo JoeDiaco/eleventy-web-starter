@@ -14,3 +14,12 @@ eleventyComputed:
     key: "{{ podcast.title }}"
     title: "{{ podcast.title }}"
 ---
+
+{# {% player podcast, 'playlist', 'w-1/4 aspect-square m-4' %} #}
+
+<div
+  class="overflow-hidden bg-cover rounded-lg cursor-pointer w-1/4 aspect-square m-6 group"
+  style="background-image:url('/static/images/{{podcast.slug}}.{{podcast.coverMIME}}')"
+>
+    {% player podcast, 'playlist', 'w-full h-full p-4 transition-opacity duration-700 aspect-square opacity-0 backdrop-blur-sm bg-gray-800/60 group-hover:opacity-[.97]' %}
+</div>
