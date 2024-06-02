@@ -2,7 +2,7 @@ module.exports = {
 	"title": "Total Pillow Chad Productions",
 	"description": "Total Pillow Chad Productions is taking audio storytelling to the next level.",
 	"slogan": "Entertain the pain away.",
-	"url": "https://totalpillowchad.com",
+	"url": process.env.URL || "http://localhost:8080",
 	"author": "Joe Diaco",
 	"socials": {
 		"twitter": {
@@ -19,8 +19,6 @@ module.exports = {
 	},
 	"logo": {
 		"main": {
-			"blue": "/static/tpc_logo.png",
-			"white": "/static/tpc_logo_white.png",
 			"flat": "/static/tpc_logo_flat.svg",
 			"alt": "Total Pillow Chad Productions logo"
 		},

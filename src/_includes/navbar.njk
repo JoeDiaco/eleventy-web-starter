@@ -71,13 +71,13 @@
 </nav>
 #}
 
-<nav x-data="{ isOpen: false }" class="bg-white shadow bg-blue">
+<nav x-data="{ isOpen: false }" class="navbar sticky top-0 z-50 duration-300 transform">
   <div class="container px-6 py-4 mx-auto">
     <div class="lg:flex lg:items-center">
       <div class="flex items-center justify-between">
         <a href="/">
           <img
-            class="w-auto h-20 sm:h-12 fill-white"
+            class="navlogo w-auto h-20 sm:h-12"
             src="{{ _site.logo.main.flat }}"
             alt="{{ _site.logo.main.alt }}"
           />
@@ -130,7 +130,7 @@
       <div
         x-cloak
         :class="[isOpen ? 'translate-x-0 opacity-100 ' : 'opacity-0 -translate-x-full']"
-        class="absolute inset-x-0 z-20 flex-1 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white dark:bg-gray-800 lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:bg-transparent lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center lg:justify-between"
+        class="absolute inset-x-0 z-20 flex-1 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white g:mt-0 lg:p-0 lg:top-0 lg:relative lg:bg-transparent lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center lg:justify-between"
       >
         {{ collections.all | eleventyNavigation("Main") |
         eleventyNavigationToHtml(_navigation_options.navbar) | safe }}
@@ -139,14 +139,14 @@
         <div class="flex justify-center mt-6 lg:flex lg:mt-0 lg:-mx-2">
           <a
             href="{{ _site.socials.twitter.url }}"
-            class="mx-2 text-gray-600 transition-colors duration-300 transform dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300"
+            class="mx-2 transition-colors duration-300 transform hover:text-gray-500"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Twitter"
           >
             <svg
               role="img"
-              class="w-5 h-5 fill-current hover:fill-yellow"
+              class="w-5 h-5 hover:fill-yellow"
               viewBox="0 0 24 24"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -160,14 +160,14 @@
 
           <a
             href="{{ _site.socials.facebook.url }}"
-            class="mx-2 text-gray-600 transition-colors duration-300 transform dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300"
+            class="mx-2 transition-colors duration-300 transform hover:text-gray-500"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Facebook"
           >
             <svg
               role="img"
-              class="w-5 h-5 fill-current hover:fill-yellow"
+              class="w-5 h-5 hover:fill-yellow"
               viewBox="0 0 24 24"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -181,14 +181,14 @@
 
           <a
             href="{{ _site.socials.instagram.url }}"
-            class="mx-2 text-gray-600 transition-colors duration-300 transform dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300"
+            class="mx-2 transition-colors duration-300 transform hover:text-gray-500"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"
           >
             <svg
               role="img"
-              class="w-5 h-5 fill-current hover:fill-yellow"
+              class="w-5 h-5 hover:fill-yellow"
               viewBox="0 0 24 24"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"

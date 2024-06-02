@@ -1,4 +1,5 @@
 module.exports = {
+    year: () => `${new Date().getFullYear()}`,
     player: (podcast, type, classes) => {
         if (type !== 'latest' && type !== 'playlist')
             throw Error(`${type} is not a valid player type.`)
